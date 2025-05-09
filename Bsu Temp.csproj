@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84C53CAF-FBFB-47A1-B2EC-7B13DD05B094}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bsu</RootNamespace>
+    <AssemblyName>Bsu Utility Template</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.10.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharpBsu, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's GUI\MaximilityTemplate\bin\Debug\Assembly-CSharpBsu.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.VersionUtilities, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\AssetRipper.VersionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetsTools.NET, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\AssetsTools.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="AssistantCoreSDKRuntime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\AssistantCoreSDKRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="bHapticsLib, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\bHapticsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Bsu_Client">
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Bsu_Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Hydras Testing">
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Hydras Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="IndexRange, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\IndexRange.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader, Version=0.5.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour, Version=22.3.23.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils, Version=22.3.23.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.AudioManager, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.AudioManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Interaction, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.Interaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Interaction.OVR, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.Interaction.OVR.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Interaction.OVR.Samples, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.Interaction.OVR.Samples.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.LipSync, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.LipSync.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Platform, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Spatializer, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.Spatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.Voice.Demo.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.VR, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Oculus.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D, Version=4.1.6.19, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonChat, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonChat.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonRealtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonRealtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonUnityNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking.Demos, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonUnityNetworking.Demos.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking.Utilities, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonUnityNetworking.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonVoice.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.API, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonVoice.API.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PhotonVoice.PUN.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFab, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\PlayFab.dll</HintPath>
+    </Reference>
+    <Reference Include="Tomlet, Version=5.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Tomlet.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib, Version=0.4.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerRuntimeLib, Version=0.4.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnhollowerRuntimeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.KdTree, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.ProBuilder.KdTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Poly2Tri, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.CoreUtils, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.CoreUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.Interaction.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.Oculus.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.OpenXR.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.MockRuntime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.OpenXR.Features.MockRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\Unity.XR.OpenXR.Features.RuntimeDebugger.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ValueTupleBridge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\ValueTupleBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceSDK.Dictation.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\VoiceSDK.Dictation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceSDK.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\VoiceSDK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocketDotNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Desktop\Mod Menus (DONT DELETE)\Bsu's HoldAble\iiSuckAtThis-main\IISuckAtThis\Hydras Template For Maximillity\Hydras Testing\Hydras Testing\bin\Debug\WebSocketDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
